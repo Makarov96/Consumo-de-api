@@ -10,7 +10,7 @@ class StructureCard extends StatefulWidget {
 }
 
 class _StructureCardState extends State<StructureCard> {
-  Widget photo_profile(context) {
+  Widget photoprofile(context) {
     double screenHeigth = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Container(
@@ -137,7 +137,7 @@ class _StructureCardState extends State<StructureCard> {
     double screenWidth = MediaQuery.of(context).size.width;
     return Stack(children: <Widget>[
       card(screenHeigth, screenWidth),
-      photo_profile(context)
+      photoprofile(context)
     ]);
   }
 

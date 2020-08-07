@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-class Shimmer_Loading extends StatelessWidget {
-  Shimmer_Loading({Key key}) : super(key: key);
+class ShimmerLoading extends StatelessWidget {
+  ShimmerLoading({Key key}) : super(key: key);
 
-  Widget photo_profile(screenHeigth, screenWidth) {
+  Widget photoprofile(screenHeigth, screenWidth) {
     return Shimmer.fromColors(
       baseColor: Colors.grey[300],
       highlightColor: Colors.grey[100],
@@ -35,7 +35,7 @@ class Shimmer_Loading extends StatelessWidget {
         ),
         Shimmer.fromColors(
           child: Container(
-            margin: EdgeInsets.only(top: screenHeigth*0.02),
+              margin: EdgeInsets.only(top: screenHeigth * 0.02),
               height: screenHeigth * 0.02,
               width: screenWidth * 0.4,
               decoration: BoxDecoration(color: Colors.white)),
@@ -56,12 +56,13 @@ class Shimmer_Loading extends StatelessWidget {
       width: screenWidth * 0.9,
       child: Stack(children: <Widget>[
         Positioned(
-          top: 0.0,
-          left: 0.0,child: photo_profile(screenHeigth, screenWidth)),
+            top: 0.0,
+            left: 0.0,
+            child: photoprofile(screenHeigth, screenWidth)),
         Positioned(
-          top: 30.0,
-          right: 0.0
-          ,child: rightColumn(screenHeigth, screenWidth))
+            top: 30.0,
+            right: 0.0,
+            child: rightColumn(screenHeigth, screenWidth))
       ]),
     );
   }
